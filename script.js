@@ -95,14 +95,5 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 
-  // ============================================================
-  // Graceful fallback for missing placeholder images
-  // ============================================================
-  document.querySelectorAll('img').forEach(function (img) {
-    img.addEventListener('error', function () {
-      this.style.visibility = 'hidden';
-    });
-  });
-
 
 });
