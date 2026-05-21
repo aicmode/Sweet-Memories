@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Memories | Taste the Memory.</title>
+  <meta name="description" content="あの頃の、やさしい時間を思い出す。ひとくちのスイーツに、小さな幸せを詰め込んで。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,600;1,400&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================
+       HEADER
+       ======================================== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+
+      <div class="header-logo">
+        <a href="index.html">
+          <span class="logo-main">Sweet Memories</span>
+          <span class="logo-sub">est. 1998</span>
+        </a>
+      </div>
+
+      <nav class="header-nav" id="header-nav" aria-label="メインナビゲーション">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Collection</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#memories">Memories</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#" class="btn-store">Online Store</a>
+        <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="header-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========================================
+         HERO SECTION
+         ======================================== -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+
+        <div class="hero-image">
+          <div class="hero-photo">
+            <img src="images/hero-cookies.webp" alt="木のテーブルに並ぶ手作りクッキー" loading="eager">
+          </div>
+          <span class="hero-label handwritten">homemade with love</span>
+        </div>
+
+        <div class="hero-content">
+          <p class="hero-eyebrow">— No. 01</p>
+          <h1 class="hero-title">
+            <span class="hero-title-sweet">SWEET</span>
+            <span class="hero-title-memories">Memories</span>
+          </h1>
+          <p class="hero-tagline">Taste the Memory.</p>
+          <p class="hero-desc">
+            あの頃の、やさしい時間を思い出す。<br>
+            ひとくちのスイーツに、<br>
+            小さな幸せを詰め込んで。
+          </p>
+          <a href="#story" class="btn-primary">Our Story</a>
+          <p class="hero-note handwritten">since 1998</p>
+        </div>
+
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         MEMORIES GALLERY
+         ======================================== -->
+    <section class="memories" id="memories">
+      <div class="memories-header">
+        <p class="section-label">— Our Collection</p>
+        <h2 class="section-title">Polaroid <em>Memories</em></h2>
+        <p class="section-desc">懐かしいひとときを、一枚の写真に閉じ込めて。</p>
+      </div>
+
+      <div class="memories-hint-scroll">
+        <span>drag to explore</span>
+        <div class="hint-arrow">→</div>
+      </div>
+
+      <div class="polaroid-grid" id="polaroid-grid">
+
+        <div class="polaroid-card" style="--rotate: -3deg; --offset-y: 20px;">
+          <div class="polaroid-tape"></div>
+          <div class="polaroid-inner">
+            <div class="polaroid-img">
+              <img src="images/memory-cookie.webp" alt="Chocolate Chip Cookies">
+            </div>
+            <div class="polaroid-caption">
+              <span class="polaroid-num">01</span>
+              <span class="polaroid-name handwritten">Chocolate Chip Cookies</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="polaroid-card" style="--rotate: 2deg; --offset-y: 0px;">
+          <div class="polaroid-tape"></div>
+          <div class="polaroid-inner">
+            <div class="polaroid-img">
+              <img src="images/memory-rolls.webp" alt="Cinnamon Rolls">
+            </div>
+            <div class="polaroid-caption">
+              <span class="polaroid-num">02</span>
+              <span class="polaroid-name handwritten">Cinnamon Rolls</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="polaroid-card" style="--rotate: -1.5deg; --offset-y: 30px;">
+          <div class="polaroid-tape"></div>
+          <div class="polaroid-inner">
+            <div class="polaroid-img">
+              <img src="images/memory-pie.webp" alt="Blueberry Pie">
+            </div>
+            <div class="polaroid-caption">
+              <span class="polaroid-num">03</span>
+              <span class="polaroid-name handwritten">Blueberry Pie</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="polaroid-card" style="--rotate: 3.5deg; --offset-y: 10px;">
+          <div class="polaroid-tape"></div>
+          <div class="polaroid-inner">
+            <div class="polaroid-img">
+              <img src="images/memory-brownie.webp" alt="Chocolate Brownies">
+            </div>
+            <div class="polaroid-caption">
+              <span class="polaroid-num">04</span>
+              <span class="polaroid-name handwritten">Chocolate Brownies</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="polaroid-card" style="--rotate: -2.5deg; --offset-y: 15px;">
+          <div class="polaroid-tape"></div>
+          <div class="polaroid-inner">
+            <div class="polaroid-img">
+              <img src="images/memory-cupcake.webp" alt="Vanilla Cupcakes">
+            </div>
+            <div class="polaroid-caption">
+              <span class="polaroid-num">05</span>
+              <span class="polaroid-name handwritten">Vanilla Cupcakes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="polaroid-card" style="--rotate: 1.5deg; --offset-y: 25px;">
+          <div class="polaroid-tape"></div>
+          <div class="polaroid-inner">
+            <div class="polaroid-img">
+              <img src="images/memory-doughnut.webp" alt="Classic Doughnuts">
+            </div>
+            <div class="polaroid-caption">
+              <span class="polaroid-num">06</span>
+              <span class="polaroid-name handwritten">Classic Doughnuts</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================
+         STORY SECTION
+         ======================================== -->
+    <section class="story" id="story">
+      <div class="story-inner">
+
+        <div class="story-visual">
+          <div class="story-main-img">
+            <img src="images/story-cookies.webp" alt="手作りクッキーの写真">
+          </div>
+          <div class="story-deco story-deco--small1">
+            <img src="images/story-small-gift.webp" alt="Gift box">
+          </div>
+          <div class="story-deco story-deco--small2">
+            <img src="images/story-kitchen.webp" alt="Kitchen scene">
+          </div>
+          <div class="story-deco story-deco--memo">
+            <p class="handwritten">"made with<br>love &amp; butter"</p>
+          </div>
+          <div class="story-deco story-deco--flower"></div>
+        </div>
+
+        <div class="story-content">
+          <p class="section-label">— Our Story</p>
+          <h2 class="story-title">
+            Every Sweet<br>
+            Has a <em>Story.</em>
+          </h2>
+          <div class="story-body">
+            <p>
+              小さなキッチンからはじまった<br>
+              私たちのスイーツ。<br>
+              ひとつひとつ、心を込めて<br>
+              手作りしています。
+            </p>
+          </div>
+          <a href="#" class="btn-secondary">About Us</a>
+          <div class="story-stamp">
+            <span class="handwritten">Sweet<br>Memories</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================
+         SEASONAL COLLECTION
+         ======================================== -->
+    <section class="seasonal" id="collection">
+      <div class="seasonal-inner">
+
+        <div class="seasonal-header">
+          <p class="section-label">— Seasonal</p>
+          <h2 class="section-title">Collection <em>2024</em></h2>
+        </div>
+
+        <div class="seasonal-grid">
+
+          <div class="seasonal-card">
+            <span class="seasonal-index">01</span>
+            <div class="seasonal-img seasonal-img--summer">
+              <img src="images/season-summer-cookie.webp" alt="Summer Cookie">
+            </div>
+            <div class="seasonal-info">
+              <p class="seasonal-season handwritten">Summer</p>
+              <h3 class="seasonal-name">Summer Cookie</h3>
+              <p class="seasonal-desc">夏の日差しのような、さっぱりとした甘さ。</p>
+              <a href="#" class="btn-link">View More →</a>
+            </div>
+          </div>
+
+          <div class="seasonal-card">
+            <span class="seasonal-index">02</span>
+            <div class="seasonal-img seasonal-img--autumn">
+              <img src="images/season-autumn-pie.webp" alt="Autumn Pie">
+            </div>
+            <div class="seasonal-info">
+              <p class="seasonal-season handwritten">Autumn</p>
+              <h3 class="seasonal-name">Autumn Pie</h3>
+              <p class="seasonal-desc">秋の豊かな実りをぎゅっと詰め込んだパイ。</p>
+              <a href="#" class="btn-link">View More →</a>
+            </div>
+          </div>
+
+          <div class="seasonal-card">
+            <span class="seasonal-index">03</span>
+            <div class="seasonal-img seasonal-img--winter">
+              <img src="images/season-winter-chocolate.webp" alt="Winter Chocolate">
+            </div>
+            <div class="seasonal-info">
+              <p class="seasonal-season handwritten">Winter</p>
+              <h3 class="seasonal-name">Winter Chocolate</h3>
+              <p class="seasonal-desc">寒い夜を温める、濃厚なチョコレート。</p>
+              <a href="#" class="btn-link">View More →</a>
+            </div>
+          </div>
+
+          <div class="seasonal-card">
+            <span class="seasonal-index">04</span>
+            <div class="seasonal-img seasonal-img--spring">
+              <img src="images/season-spring-cake.webp" alt="Spring Cake">
+            </div>
+            <div class="seasonal-info">
+              <p class="seasonal-season handwritten">Spring</p>
+              <h3 class="seasonal-name">Spring Cake</h3>
+              <p class="seasonal-desc">春の訪れを祝う、花のように柔らかなケーキ。</p>
+              <a href="#" class="btn-link">View More →</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================
+         BIG TYPOGRAPHY SECTION
+         ======================================== -->
+    <section class="big-type" id="big-type">
+      <div class="big-type-bg">
+        <img src="images/big-typography-bg.webp" alt="" aria-hidden="true" loading="lazy">
+      </div>
+      <div class="big-type-overlay"></div>
+      <div class="big-type-content">
+        <p class="big-type-small handwritten">— since 1998 —</p>
+        <h2 class="big-type-title">
+          <span class="big-type-word">SWEET</span>
+          <span class="big-type-word big-type-italic">MEMORIES</span>
+        </h2>
+        <p class="big-type-tagline">Taste the Memory.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-inner">
+
+      <div class="footer-left">
+        <div class="footer-logo">
+          <span class="logo-main">Sweet Memories</span>
+          <span class="logo-sub">est. 1998</span>
+        </div>
+        <nav class="footer-nav" aria-label="フッターナビゲーション">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </nav>
+        <p class="footer-copy">&copy; 2024 Sweet Memories. All rights reserved.</p>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-memo">
+          <h3 class="footer-memo-title handwritten">LET'S STAY<br>IN TOUCH.</h3>
+          <p class="footer-memo-desc">最新情報はSNSでチェック。</p>
+          <div class="footer-social">
+
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <span>Instagram</span>
+            </a>
+
+            <a href="#" class="social-link" aria-label="X (Twitter)">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <span>X (Twitter)</span>
+            </a>
+
+            <a href="#" class="social-link" aria-label="Pinterest">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.18-.77 1.23-5.2 1.23-5.2s-.31-.63-.31-1.56c0-1.47.85-2.56 1.91-2.56.9 0 1.34.68 1.34 1.49 0 .91-.58 2.27-.88 3.53-.25 1.05.52 1.91 1.55 1.91 1.86 0 3.11-2.39 3.11-5.23 0-2.16-1.46-3.67-3.55-3.67-2.42 0-3.84 1.82-3.84 3.7 0 .73.28 1.52.63 1.95.07.08.08.16.06.24-.06.27-.21.85-.24.97-.04.15-.13.19-.29.11-1.1-.51-1.79-2.13-1.79-3.43 0-2.79 2.02-5.35 5.83-5.35 3.06 0 5.44 2.18 5.44 5.09 0 3.04-1.91 5.48-4.57 5.48-.89 0-1.73-.46-2.02-1.01l-.55 2.06c-.2.77-.74 1.73-1.1 2.32.83.26 1.7.4 2.61.4 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+              <span>Pinterest</span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
