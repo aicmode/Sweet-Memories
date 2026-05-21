@@ -949,6 +949,8 @@ ul {
 .site-footer {
   background-color: var(--brown-dark);
   padding: var(--sp-xl) var(--side-pad);
+  position: relative;
+  overflow: hidden;
 }
 
 .footer-inner {
@@ -958,6 +960,8 @@ ul {
   justify-content: space-between;
   align-items: flex-start;
   gap: var(--sp-xl);
+  position: relative;
+  z-index: 1;
 }
 
 /* Footer left column */
@@ -1284,4 +1288,74 @@ ul {
   .big-type-title {
     font-size: clamp(44px, 18vw, 72px);
   }
+}
+
+
+/* ============================================================
+   16. FOOTER FLOATING SWEETS
+   ============================================================ */
+.footer-sweets {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.footer-sweet {
+  position: absolute;
+  display: block;
+  opacity: 0.32;
+  will-change: transform;
+}
+
+/* Individual placements — corners & margins outside the content column */
+.footer-sweet--1 {
+  top: 14%;
+  left: 2.5%;
+  animation: floatSweet 8s ease-in-out infinite;
+}
+
+.footer-sweet--2 {
+  top: 10%;
+  right: 2.5%;
+  animation: floatSweet 10s ease-in-out infinite 2.5s;
+}
+
+.footer-sweet--3 {
+  bottom: 22%;
+  left: 5%;
+  animation: floatSweet 9s ease-in-out infinite 1.5s;
+}
+
+.footer-sweet--4 {
+  bottom: 16%;
+  right: 5%;
+  animation: floatSweet 7s ease-in-out infinite 3.5s;
+}
+
+.footer-sweet--5 {
+  bottom: 12%;
+  left: 37%;
+  animation: floatSweet 11s ease-in-out infinite 0.8s;
+}
+
+@keyframes floatSweet {
+  0%,  100% { transform: translateY(0px)   rotate(0deg);  }
+  25%        { transform: translateY(-10px) rotate(2deg);  }
+  50%        { transform: translateY(-15px) rotate(0deg);  }
+  75%        { transform: translateY(-7px)  rotate(-2deg); }
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .footer-sweet { animation: none; }
+}
+
+/* Mobile — keep only top-corner items, hide the rest */
+@media (max-width: 768px) {
+  .footer-sweet--3,
+  .footer-sweet--4,
+  .footer-sweet--5 { display: none; }
+  .footer-sweet--1 { top: 5%; left: 2%; }
+  .footer-sweet--2 { top: 5%; right: 2%; }
 }
